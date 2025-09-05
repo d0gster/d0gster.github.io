@@ -1,8 +1,8 @@
 ### Site Settings ###
 title               : Danilo Monteiro's Portfolio
 description         : >-
-                      I turn coffee :coffee: into code,
-                      use tabs over spaces
+                      I turn :coffee: into code.
+                      Use tabs over spaces
                       and never broke production.
 baseurl             : ""            # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : d0gster.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
@@ -31,11 +31,11 @@ author:
 # dribbble          : your_username
   email             : dev.danilomonteiro@gmail.com
 # facebook          : your_username
-  github            : github.com/d0gster/
+  github            : d0gster
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
-  linkedin          : linkedin.com/in/danilo-monteir0/
+  linkedin          : danilo-monteir0
 # medium            : your_username
 # soundcloud        : your_username
 # spotify           : your_username
@@ -102,9 +102,13 @@ defaults:
       comments: false                                   # Set to true to enable disqus comments
 
 
+### Custom CSS ###
+# Include custom CSS for styling overrides
+
 ### Exclude from processing ###
 exclude:
   - README.md
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
+  - vendor/
