@@ -1,7 +1,23 @@
-- name: Adobe Photoshop
-  percentage: 95
-  color: info
+- name: Problem Solving & Analytical Thinking
+  skills:
+    - Advanced Logical Reasoning
+    - Complex Problem Decomposition
+    - Root Cause Analysis
+    - Critical Thinking
+    - Data-Driven Decision Making
 
-- name: Adobe Illustrator
-  percentage: 90
-  color: success
+- name: Leadership & Communication
+  skills:
+    - Technical Team Leadership
+    - Cross-functional Collaboration
+    - Stakeholder Management
+    - Technical Documentation
+    - Mentoring & Knowledge Transfer
+
+- name: Emotional Intelligence & Adaptability
+  skills:
+    - High Emotional Intelligence
+    - Stress Management
+    - Adaptability to Change
+    - Continuous Learning Mindset
+    - Conflict Resolution

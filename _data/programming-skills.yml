@@ -1,11 +1,22 @@
-- name: HTML5/CSS3
-  percentage: 90
-  color: danger
+- name: Cloud & AI Engineering
+  skills:
+    - AWS (Bedrock, Amazon Q)
+    - Google Cloud Platform (Vertex AI)
+    - CI/CD Pipelines
+    - Infrastructure as Code (IaC)
+    - Responsible AI Practices
 
-- name: Go
-  percentage: 80
-  color:
+- name: Backend & Software Architecture
+  skills:
+    - PHP/Laravel/CodeIgniter
+    - Design Patterns & Clean Code
+    - RESTful API Development
+    - Microservices Architecture
+    - Legacy System Refactoring
 
-- name: Python
-  percentage: 70
-  color: secondary
+- name: Other Core Skills
+  skills:
+    - Database Modeling & Administration (SQL)
+    - Agile Methodologies
+    - Networking
+    - Windows Server

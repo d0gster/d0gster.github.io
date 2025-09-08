@@ -1,17 +1,14 @@
-- title: Student, Harvard CS
-  from: 2014
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: PHP Developer, DevCodes - Soluções Tecnológicas
+  from: 2021
+  to: 2022
+  description: "In an outsourcing project, I improved the user experience of a virtual library by implementing advanced features in the book viewer, such as text highlighting with a virtual highlighter. I also innovated by developing an automatic citation tool: when a passage was copied, the system automatically generated the complete bibliographic reference (author, page, ISBN), automating a manual process for students and researchers."
 
-- title: Software Engineer, Google, UK
-  from: 2018
-  to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Infrastructure Specialist, Ticomia Formaturas
+  from: 2015
+  to: 2020
+  description: "I deepened my infrastructure expertise by restructuring the company's network architecture to support over 200 simultaneously connected devices, solving chronic instability issues.<br>By implementing high-performance Access Points and an advanced firewall/router (BFW) on a Dell server, I achieved network uptime of over 200 consecutive days, which virtually eliminated support calls related to connectivity and maximized productivity."
+
+- title: TI Intern, Ticomia Formaturas
+  from: 2013
+  to: 2015
+  description: "My tech journey started as a TI intern, where I quickly earned the trust of leadership to manage critical systems like Active Directory and the corporate email platform.<br>With a focus on optimization, I developed an automated Visual Basic solution on a USB drive for hardware inventory, drastically streamlining the manual audit process."
