@@ -1,4 +1,12 @@
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+gem "jekyll", "~> 3.9"
+
+group :jekyll_plugins do
+  gem "jekyll-remote-theme"
+  gem "jekyll-include-cache"
+  gem "jekyll-seo-tag"
+  gem "jemoji"
+  gem "kramdown-parser-gfm"
+  gem "jekyll-gist"
+end
