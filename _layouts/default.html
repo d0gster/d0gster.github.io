@@ -1,0 +1,42 @@
+---
+layout: compress
+---
+{% assign current_lang = page.lang | default: site.default_lang %}
+<!DOCTYPE html>
+<html lang="{{ current_lang }}">
+  {% include head.html current_lang=current_lang %}
+
+  <body class="h-100 d-flex flex-column">
+
+    <main class="flex-shrink-0 container mt-5">
+      {% include navbar.html current_lang=current_lang %}
+      {{ content }}
+    </main>
+
+    {% include footer.html current_lang=current_lang %}
+
+    {% include js.html current_lang=current_lang %}
+
+    <script>
+      // Set site.active_lang in JavaScript for client-side use
+      document.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const langParam = urlParams.get('lang');
+        const storedLang = localStorage.getItem('lang');
+
+        let activeLang = '{{ site.default_lang }}'; // Default from _config.yml
+
+        if (langParam && (langParam === 'en' || langParam === 'pt-br')) {
+          activeLang = langParam;
+        } else if (storedLang && (storedLang === 'en' || storedLang === 'pt-br')) {
+          activeLang = storedLang;
+        }
+
+        // Set a global variable or data attribute for JavaScript access if needed
+        document.documentElement.setAttribute('data-active-lang', activeLang);
+        // We already set the lang attribute in the <html> tag using Liquid, this is just for JS consistency
+        // The `current_lang` is set by Liquid in the HTML lang attribute during build time.
+      });
+    </script>
+  </body>
+</html>

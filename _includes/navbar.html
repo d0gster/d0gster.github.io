@@ -1,0 +1,104 @@
+<nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>{{ site.title }}</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+      <a class="nav-item nav-link" href="/projects/">Projects</a>
+      <a class="nav-item nav-link" href="/blog/">Blog</a>
+      <a class="nav-item nav-link" href="/about/">About</a>
+      
+      <!-- Language Switcher -->
+      <span id="language-switcher" class="nav-item nav-link" role="button" onclick="toggleLanguage()">🇺🇸 EN</span>
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+
+<!-- Hidden Google Translate Widget -->
+<div id="google_translate_element" style="display: none;"></div>
+
+<script type="text/javascript">
+let currentLang = 'en';
+let translateReady = false;
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'en,pt'
+  }, 'google_translate_element');
+  
+  // Wait for translate to be ready
+  setTimeout(() => {
+    translateReady = true;
+    console.log('Google Translate ready');
+  }, 2000);
+}
+
+function toggleLanguage() {
+  console.log('Toggle clicked, current lang:', currentLang);
+  const switcher = document.getElementById('language-switcher');
+  
+  if (!translateReady) {
+    console.log('Translate not ready yet');
+    return;
+  }
+  
+  if (currentLang === 'en') {
+    currentLang = 'pt-br';
+    switcher.innerHTML = '🇧🇷 PT-BR';
+    
+    // Force show widget temporarily to trigger translation
+    const widget = document.getElementById('google_translate_element');
+    widget.style.display = 'block';
+    
+    setTimeout(() => {
+      const select = document.querySelector('.goog-te-combo');
+      console.log('Select element found:', select);
+      if (select) {
+        select.value = 'pt';
+        select.dispatchEvent(new Event('change'));
+        console.log('Triggered Brazilian Portuguese translation');
+      }
+      widget.style.display = 'none';
+    }, 1000);
+  } else {
+    currentLang = 'en';
+    switcher.innerHTML = '🇺🇸 EN';
+    
+    const widget = document.getElementById('google_translate_element');
+    widget.style.display = 'block';
+    
+    setTimeout(() => {
+      const select = document.querySelector('.goog-te-combo');
+      if (select) {
+        select.value = 'en';
+        select.dispatchEvent(new Event('change'));
+        console.log('Triggered English translation');
+      }
+      widget.style.display = 'none';
+    }, 1000);
+  }
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<style>
+.goog-te-banner-frame { display: none !important; }
+body { top: 0 !important; }
+#language-switcher {
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+}
+#language-switcher:hover {
+  opacity: 0.7;
+}
+</style>
