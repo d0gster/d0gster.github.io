@@ -1,3 +1,18 @@
+- title: Systems Developer, Inform Soluções
+  from: 2023
+  to: 2024
+  description: "I orchestrated a mass modernization project for the company’s ERP banking integration processes, refactoring and standardizing the generation of payment slips for key financial institutions like Itaú, Caixa Econômica, Banco do Brasil, Sicoob, and Sicredi. I was also the direct technical point of contact with clients and industries, translating their business needs into effective solutions and ensuring the stability of financial operations."
+
+- title: Full Stack Developer, SPSP Oficial - Grupo Empresarial de Serviços
+  from: 2023
+  to: 2023
+  description: "I made a decisive intervention in a server migration that had been stalled for over 70 hours, unblocking the progress of a 3-person team. My quick analysis allowed me to solve the blocking error in just 15 minutes, leading to a complete and successful migration. I also proactively refactored legacy classes and database models, resulting in a measurable performance increase and the elimination of critical security vulnerabilities like SQL injection vectors."
+
+- title: PHP Developer, HCosta
+  from: 2022
+  to: 2023
+  description: "I developed an automation solution (cron job) that eliminated a manual email collection process performed daily by about 5 employees, resulting in a significant reduction in operational costs and human error rates. I also enhanced a strategic banking data API, optimizing the delivery of monthly reports on debts that were essential for representatives and no longer stored by the banks themselves."
+
 - title: PHP Developer, DevCodes - Soluções Tecnológicas
   from: 2021
   to: 2022
